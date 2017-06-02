@@ -1,0 +1,23 @@
+{
+  "globals": {
+    "tokensBlackList": true,
+    "secret": true,
+    "cleanBlacklist": true,
+    "isItBlacklisted": true,
+    "getResponseInformation": true,
+    "responses": true
+  },
+  "rules": {
+    "max-len": [1, 120, 2, {
+      "ignoreUrls": true,
+      "ignoreComments": true
+    }],
+    "callback-return": [2, ["callback", "next", "done"]],
+    "handle-callback-err": [2, "^.*(e|E)rr"],
+    "comma-dangle": ["error", "never"],
+    "func-names": "off",
+    "strict": [2, "global"],
+    "global-strict": [0, "always"]
+  },
+  "extends": ["airbnb-base/legacy"]
+}
