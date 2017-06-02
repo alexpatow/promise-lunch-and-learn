@@ -1,12 +1,4 @@
 {
-  "globals": {
-    "tokensBlackList": true,
-    "secret": true,
-    "cleanBlacklist": true,
-    "isItBlacklisted": true,
-    "getResponseInformation": true,
-    "responses": true
-  },
   "rules": {
     "max-len": [1, 120, 2, {
       "ignoreUrls": true,
